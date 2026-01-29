@@ -11,7 +11,7 @@ Directly utilizes the core logic from [JJTech0130/TrollRestore](https://github.c
 
 ## 📋 Prerequisites
 * **OS:** Windows 10 or 11.
-* **iTunes:** **Mandatory.** Must be installed for mobile device drivers.
+* **iTunes:** **Mandatory.** Must be installed for mobile device drivers (Win32 version recommended).
 * **TrollRestore:** Ensure the `TrollRestore` executable is present in the working directory.
 
 ## 📱 iOS Version Support
@@ -23,19 +23,20 @@ Directly utilizes the core logic from [JJTech0130/TrollRestore](https://github.c
 | **iOS 15.0 - 15.1.1** | ⚠️ Experimental (Potential restore issues) |
 | **iOS 14.x and below** | 🚫 Disabled (Stability issues) |
 
-> [!IMPORTANT]
-> Support for iOS 14 and below is currently disabled due to backup restoration failures. While 15.0 - 15.1.1 remains enabled, use it with caution as similar issues have been reported post-release.
-
 ## 🛠 Usage
-1.  Download the latest release and extract all files to a folder.
+1.  Download the latest release and extract all files to a folder (.exe must include).
 2.  Launch the automation script:
     ```cmd
     trollrestore.bat
     ```
 3.  Connect your device via USB. The script will handle the deployment automatically.
+4.  **Post-Installation:** Once the process finishes successfully, open the **Tips** app on your device to proceed with the TrollStore installation.
 
-## ⚖️ Disclaimer
-This is an unofficial automation wrapper. I am not responsible for any data loss. Always back up your device before performing system-level modifications.
+## ⚠️ Important Notes (Read Before Use)
 
----
-**Credits:** Original tool by [JJTech0130](https://github.com/JJTech0130/TrollRestore/).
+### Language & Target App Localization
+If your device is set to a language other than English, the script may fail to locate the **Tips** app. 
+* **Recommended Fix:** Change the target application to **Bridge** (Watch app) to ensure compatibility. 
+* To do this via command line:
+  ```cmd
+  echo Bridge>troll_input.txt
