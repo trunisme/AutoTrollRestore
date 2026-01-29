@@ -12,7 +12,25 @@ Directly utilizes the core logic from [JJTech0130/TrollRestore](https://github.c
 ## 📋 Prerequisites
 * **OS:** Windows 10 or 11.
 * **iTunes:** **Mandatory.** Must be installed for mobile device drivers (Win32 version recommended).
-* **TrollRestore:** Ensure the `TrollRestore` executable is present in the working directory.
+* **Python:** Python 3.x must be installed and added to your system PATH.
+
+## 🛠 Setup & Environment
+Before running the script, you must initialize the Python environment:
+
+1. Clone or download this repository.
+2. Ensure `TrollRestore.exe` is present in the root folder.
+3. Open Terminal/Command Prompt in the project folder and run:
+   ```bash
+   pip install -r requirements.txt
+   
+## 🛠 Usage
+1.  Download the latest release and extract all files to a folder (.exe must include).
+2.  Launch the automation script:
+    ```cmd
+    trollrestore.bat
+    ```
+3.  Connect your device via USB. The script will handle the deployment automatically.
+4.  **Post-Installation:** Once the process finishes successfully, open the **Tips** app on your device to proceed with the TrollStore installation.
 
 ## 📱 iOS Version Support
 
@@ -22,15 +40,6 @@ Directly utilizes the core logic from [JJTech0130/TrollRestore](https://github.c
 | **iOS 17.0 (All Builds)** | ✅ Supported (21A326, 21A327, 21A329, 21A331) |
 | **iOS 15.0 - 15.1.1** | ⚠️ Experimental (Potential restore issues) |
 | **iOS 14.x and below** | 🚫 Disabled (Stability issues) |
-
-## 🛠 Usage
-1.  Download the latest release and extract all files to a folder (.exe must include).
-2.  Launch the automation script:
-    ```cmd
-    trollrestore.bat
-    ```
-3.  Connect your device via USB. The script will handle the deployment automatically.
-4.  **Post-Installation:** Once the process finishes successfully, open the **Tips** app on your device to proceed with the TrollStore installation.
 
 ## ⚠️ Important Notes (Read Before Use)
 
